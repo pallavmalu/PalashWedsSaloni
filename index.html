@@ -114,16 +114,14 @@
                 <div class="col-md-3 hidden-sm hidden-xs"><img src="img/IMG_2317.jpg" class="wp1"></div>
                 <div class="col-md-6">
                     <p>
-                        I first saw Antara in the Fall of 2008 when we started our undergrad. I was instantly attracted
-                        to
-                        her but was far too nervous to speak to her. I had told my friend I liked her and news had
-                        traveled
-                        fast and she soon found out. Her first reaction was "Who is Ram?" and she began searching for me
-                        in
-                        the class. She started to take notice of me and no matter how boring the lecture was, we never
-                        missed a class after that. After a good few months I finally plucked up the courage to ask her
-                        out
-                        and the rest is history :)
+                        I first saw Saloni when I was a kid but back then never thought of her as my life partner. 
+                        As our families were already friends for long and were looking for a suitable match, 
+                        they arranged for us to meet. When I met her first and we drove to a peaceful cafe in the 
+                        city for out very first date and begun talking about likes, dislikes, future, our ambitions, 
+                        our dreams, our lifestyles and before I knew our frequencies matched and the rest is history that
+                        we will share at some point in time and want you to be a part of it by celeberating our marriage 
+                        with us and our families.
+                        
                     </p>
                 </div>
                 <div class="col-md-3 hidden-sm hidden-xs"><img src="img/DSD_0214.jpg" class="wp2"></div>
@@ -533,10 +531,10 @@
 
                 $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-                if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-                    && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
-                } else {
+                // if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
+                //     && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
+                //     $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+                // } else {
                     $.post('https://script.google.com/macros/s/AKfycbxp9nZ11UQIvymbzSYdfixA4NiaaFq8bLrC9duS/exec', data)
                         .done(function (data) {
                             console.log(data);
@@ -551,7 +549,7 @@
                             console.log(data);
                             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
                         });
-                }
+                // }
             });
         })
     </script>
